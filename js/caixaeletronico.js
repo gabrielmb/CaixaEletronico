@@ -3,45 +3,7 @@ var app = angular.module('Caixa', []);
 app.controller('NotasNoCaixa',function($scope){
 
   $scope.notas = [0,0,0,0];
-  /*Saca por notas, passando quais notas e seus valores*/
-  $scope.Saca = function(valor,quant){
-    if(quant < 0){
-      alert("Não aceitamos valores negativos!");
-    }else{
-      if(valor == 100){
-        if((nota100 - quant) >= 0 && quant > 0){
-          nota100 -= quant;
-          $scope.notas.splice(0,1,nota100);
-        }else{
-          alert("Notas insuficientes!");
-        }
-      }else if(valor == 50){
-        if((nota50 - quant)>= 0 && quant > 0){
-          nota50 -= quant;
-          $scope.notas.splice(1,1,nota50);
-        }else{
-          alert("Notas insuficientes!");
-        }
-      }else if(valor == 20 && quant > 0){
-        if((nota20 - quant) >= 0){
-          nota20 -= quant;
-          $scope.notas.splice(2,1,nota20);
-        }else{
-          alert("Notas insuficientes!");
-        }
-      }else if(valor == 10 && quant > 0){
-        if((nota10 - quant) >= 0){
-          nota10 -= quant;
-          $scope.notas.splice(3,1,nota10);
-        }else{
-          alert("Notas insuficientes!");
-        }
-      }else{
-          alert("Valor Invalido");
-      }
-    }
-  };
-
+  
   /*Saca por valor e separa as notas*/
   $scope.SaqueValor = function(qtd){
     var cem = 0;
