@@ -1,0 +1,14 @@
+td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+body{
+  font-family: "verdana", "arial";
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+tr{
+  background-color: #E8E8E8;
+}
