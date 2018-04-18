@@ -1,2 +1,2 @@
 # CaixaEletronico
-LÃ³gica simples para saques.
+Lógica para saques de caixas eletrônicos.
