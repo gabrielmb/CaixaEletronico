@@ -1,4 +1,2 @@
 # CaixaEletronico
-Tentando usar um AngularJS
-Comentário na linha 3.
-Teste de resolução de conflito.
+LÃ³gica simples para saques.
